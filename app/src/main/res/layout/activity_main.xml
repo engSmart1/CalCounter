@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#b49595"
+    tools:context="com.example.hytham.calcounter.MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0c15ef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_text" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_below="@+id/titleText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/apple_three"
+        android:background="#684848"
+        android:backgroundTint="#b39494"
+        android:layout_marginTop="4dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+         />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/raw_bg_g"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp">
+        <EditText
+            android:id="@+id/foodEditText"
+            android:padding="14dp"
+            android:layout_marginTop="1dp"
+            android:hint="@string/hint_food"
+            android:textStyle="bold"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:inputType="number"
+            android:padding="14dp"
+            android:hint="@string/hint_calories"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submitButton"
+            android:text="@string/submit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
